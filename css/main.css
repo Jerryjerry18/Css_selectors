@@ -56,6 +56,24 @@ article {
 
 main article ul li span{
     font-size: 10px;
+    color: black;
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: '\2713';
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 40%;
+    padding: 4px;
+    border: 4px solid grey;
+    font-size: 1.5em;
+    position: absolute;
+    top: 40px;
+    right: 18px;
+
+
+    animation: fadein 0.7s;
 }
 
 main { text-align: center; }
@@ -92,4 +110,11 @@ ul li { padding: 6px 8px; text-transform: uppercase; }
     text-align: center;
 
 }
+
+
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
 
